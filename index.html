@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detektif Anti-Fraud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Detektif Anti-Fraud</h1>
+        <p id="scenario-text">Loading...</p>
+        <p id="timer">Waktu tersisa: <span id="time-left">15</span> detik</p>
+        <button id="fraud-btn">
+            <img src="assets/fraud-icon.png" alt="Fraud" style="width: 20px; margin-right: 10px;"> Fraud
+        </button>
+        <button id="no-fraud-btn">
+            <img src="assets/no-fraud-icon.png" alt="No Fraud" style="width: 20px; margin-right: 10px;"> Tidak Fraud
+        </button>
+        <p id="result" style="margin-top: 20px;"></p>
+        <p id="score-board">Skor: <span id="score">0</span></p>
+        <button id="next-btn" style="display: none;">Next Skenario</button>
+        <div id="infographic-container" style="display: none;">
+            <h2>Infografis Anti-Fraud</h2>
+            <img src="assets/infographic.png" alt="Infografis Anti-Fraud">
+        </div>
+    </div>
+
+    <!-- Suara -->
+    <audio id="correct-sound" src="assets/correct.mp3"></audio>
+    <audio id="wrong-sound" src="assets/wrong.mp3"></audio>
+    <audio id="game-over-sound" src="assets/game-over.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
