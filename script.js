@@ -1,9 +1,9 @@
 const scenarios = [
-    { text: "Seorang surveyor menerima uang dari customer yang sedang melakukan survey dan klaim kendaraannya.", isFraud: true },
-    { text: "Karyawan melaporkan pengeluaran sesuai bukti.", isFraud: false },
-    { text: "Manajer menawarkan uang untuk meloloskan klaim palsu.", isFraud: true },
-    { text: "Staf menggunakan kendaraan dinas untuk perjalanan resmi.", isFraud: false },
-    { text: "Seseorang melakukan klaim asuransi dengan tidak menggunakan polis miliknya.", isFraud: true }
+    { text: "Pak Budi bekerja di bagian klaim asuransi. Dia memanipulasi data klaim palsu atas nama nasabah yang sebenarnya tidak pernah mengajukan klaim. Uang klaim tersebut masuk ke rekening pribadinya.", isFraud: true },
+    { text: "Bu Sinta, seorang petugas survei asuransi, menerima hadiah berupa voucher belanja dari nasabah sebagai ucapan terima kasih atas pelayanan yang baik. Hadiah tersebut dilaporkan ke bagian kepatuhan perusahaan sesuai kebijakan.", isFraud: false },
+    { text: "Seorang calon nasabah menawarkan sejumlah uang kepada staf asuransi untuk mempercepat proses persetujuan polis, meskipun dokumennya belum lengkap. Staf tersebut menolak dan melaporkan kejadian ini kepada atasannya.", isFraud: false },
+    { text: "Pak Toni ingin klaim asuransinya disetujui meskipun kerusakan kendaraan yang diajukan terjadi sebelum polis aktif. Dia memberikan uang kepada petugas klaim agar laporan tersebut dimanipulasi.", isFraud: true },
+    { text: "Pak Andi, seorang pejabat di perusahaan asuransi, menerima hadiah berupa tiket liburan dari mitra bisnis perusahaan setelah menyetujui kontrak kerja sama. Hadiah tersebut tidak dilaporkan dan dicurigai sebagai bentuk imbalan tersembunyi.", isFraud: true }
 ];
 
 let currentScenarioIndex = 0;
